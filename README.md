@@ -77,7 +77,6 @@
               //使用m1与m2
             })
 		配置: 
-	        //配置
             require.config({
               //基本路径
               baseUrl: 'src/',
