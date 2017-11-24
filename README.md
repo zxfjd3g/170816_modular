@@ -136,3 +136,4 @@
 - [04_AMD规范_RequireJS](教程/04_AMD规范_RequireJS.md)
 - [05_CMD规范_SeaJS](教程/05_CMD规范_SeaJS.md)
 - [06_ES6模块化_Webpack](教程/06_ES6模块化_Webpack.md)
+- [07_npm](教程/07_npm.md)
