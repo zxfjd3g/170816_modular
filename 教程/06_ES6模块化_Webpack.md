@@ -79,7 +79,7 @@
     npm install --save-dev webpack
     npm install --save jquery@1.11
 ## 2). 编译打包JS
-    webpack src/main dist/bundle.js
+    webpack src/main.js dist/bundle.js
 ## 3). 在html中引入打包文件
     <script type="text/javascript" src="dist/bundle.js"></script>
 ## 4). 打开页面运行查看
