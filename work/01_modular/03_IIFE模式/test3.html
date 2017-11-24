@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>03_IIFE模式</title>
+</head>
+<body>
+  <script type="text/javascript" src="myModule.js"></script>
+  <script type="text/javascript">
+    myModule.foo()
+    myModule.bar()
+
+    var data = 'other data'
+    myModule.data = 'other data222'
+
+    myModule.foo()
+  </script>
+</body>
+</html>

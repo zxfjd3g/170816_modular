@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>05_模块化带来的问题</title>
+</head>
+<body>
+<!--
+问题:
+    请求过多
+    依赖模糊
+    难以维护
+解决
+    模块化规范
+    项目构建打包
+-->
+<script type="text/javascript" src="module1"></script>
+<script type="text/javascript" src="module2"></script>
+<script type="text/javascript" src="module3"></script>
+<script type="text/javascript" src="jquery-1.10.1.js"></script>
+<script type="text/javascript" src="myModule.js"></script>
+  <script type="text/javascript">
+    myModule.foo()
+    myModule.bar()
+
+    var data = 'other data'
+    myModule.data = 'other data222'
+
+    myModule.foo()
+  </script>
+</body>
+</html>

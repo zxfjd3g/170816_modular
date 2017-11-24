@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>02_namespace模式</title>
+</head>
+<body>
+  <script type="text/javascript" src="module1.js"></script>
+  <script type="text/javascript" src="module2.js"></script>
+  <script type="text/javascript">
+    module1.foo()
+    module1.bar()
+
+    module2.foo()
+    module2.bar()
+
+    // 数据不安全: 外部能直接修改模块内部的数据
+    module1.data = 'other data'
+    module1.foo()
+  </script>
+</body>
+</html>
