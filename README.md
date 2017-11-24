@@ -128,6 +128,34 @@
     4. 解决:
 		使用webpack编译打包
 		
+# 4. npm
+## 1). package.json
+    {
+      // 标识
+      "name": "xxx",
+      "version": "1.0.0",
+      // 运行项目的相关脚本
+      scripts: {
+        "build": "webpack src/main.js dist/bundle.js"
+      },
+      // 运行时依赖
+      dependencies: { },
+      // 开发(编译)时依赖
+      devDependencies: { }
+    }
+    
+## 2). npm常用命令
+    * npm init  //初始化当前应用包, 生成package.json
+    * npm install  //根据package.json下载所有依赖包
+    * npm install packageName --save   //下载某个运行时依赖包
+    * npm install packageName --save-dev  //下载某个开发编译期依赖包
+    * npm install packageName -g  //全局下载某个依赖包
+    * npm install package@version  //下载指定版本的某个依赖包
+    * npm info packageName  //查看某个包有远程仓库中的相关信息
+    * npm remove packageName --save  //移除已下载的运行依赖包
+    * npm remove packageName –save-dev  //移除已下载的开发依赖包
+    * npm run xxx //执行package.json的scripts中配置的命令
+		
 # 4. 详细教程
 - [01_模块化进化史](教程/01_模块化进化史.md)
 - [02_CommonJS规范_Node](教程/02_CommonJS规范_Node.md)
