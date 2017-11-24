@@ -76,6 +76,7 @@
 # 4. 编译打包JS, 并使用运行
 ## 1). 下载webpack
     npm install -g webpack
+    npm install --save-dev webpack
     npm install --save jquery@1.11
 ## 2). 编译打包JS
     webpack src/main dist/bundle.js
